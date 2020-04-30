@@ -323,7 +323,7 @@ else()
   hunter_default_version(jsoncpp VERSION 1.8.0)
 endif()
 
-hunter_default_version(jsonrpc-lean VERSION 0.0.0-e7667a3d)
+hunter_default_version(jsonrpc-lean VERSION 0.0.0-6c093da8)
 hunter_default_version(kNet VERSION 2.7-p1)
 hunter_default_version(kagome VERSION 0.0.1)
 hunter_default_version(kbproto VERSION 1.0.7)

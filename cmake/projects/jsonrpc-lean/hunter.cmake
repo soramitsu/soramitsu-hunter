@@ -14,11 +14,11 @@ hunter_add_version(
     PACKAGE_NAME
     jsonrpc-lean
     VERSION
-    0.0.0-e7667a3d
+    0.0.0-6c093da8
     URL
-    https://github.com/xDimon/jsonrpc-lean/archive/e7667a3dadcee71617ffe359def8e7070a257b11.tar.gz
+    https://github.com/xDimon/jsonrpc-lean/archive/6c093da8670d7bf56555f166f8b8151f33a5d741.tar.gz
     SHA1
-    6d47b02446e58c77e56c42f42e6a06af60bd0b9c
+    ab5e65fdf7e929be76bf3fc86531b220cb457091
 )
 
 hunter_cmake_args(
