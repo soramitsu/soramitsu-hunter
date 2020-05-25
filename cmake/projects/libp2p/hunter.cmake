@@ -25,7 +25,7 @@ hunter_add_version(
     PACKAGE_NAME
     libp2p
     VERSION
-    0.0.2
+    0.0.1-p0
     URL
     "https://github.com/soramitsu/cpp-libp2p/archive/1c5764c7b9862ed75173a020d8ac467a6a038136.zip"
     SHA1
