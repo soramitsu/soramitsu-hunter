@@ -27,9 +27,9 @@ hunter_add_version(
     VERSION
     0.0.1-p0
     URL
-    "https://github.com/soramitsu/cpp-libp2p/archive/v0.0.1-p0.zip"
+    "https://github.com/soramitsu/cpp-libp2p/archive/v0.0.1-p0.tar.gz"
     SHA1
-    104bed1ec760dc042da322c3dd7358b6a21b26d8
+    cc0ecbc75a9afb556fd32276e09e3e0a4f347370
 )
 
 hunter_cmake_args(
