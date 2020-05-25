@@ -8,6 +8,17 @@ hunter_add_version(
     PACKAGE_NAME
     PocoCpp
     VERSION
+    1.10.1-p0
+    URL
+    "https://github.com/cpp-pm/poco/archive/v1.10.1-p0.zip"
+    SHA1
+    3922c320158ec4c1bc37c10be76ff788d253d64f
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    PocoCpp
+    VERSION
     1.10.0-p0
     URL
     "https://github.com/cpp-pm/poco/archive/v1.10.0-p0.zip"
