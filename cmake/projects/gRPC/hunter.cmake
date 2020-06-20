@@ -37,9 +37,9 @@ hunter_add_version(
 
 hunter_add_version(
     PACKAGE_NAME gRPC
-    VERSION v1.30.0-pre1-past1
-    URL "https://github.com/soramitsu/libp2p-grpc/archive/65379dc850790ad64a71a54eabda3de1eabdd1c4.tar.gz"
-    SHA1 "c8725539e174413e060bfdafd69b4b63dacab70f")
+    VERSION v1.30.0-pre1-past2
+    URL "https://github.com/soramitsu/libp2p-grpc/archive/ad7e72a3bcf9a722aae3b782aa1b27cf27ea95ab.tar.gz"
+    SHA1 "75ba53415253aaf789e8b385bb22dc7a3a4bc2be")
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(gRPC)
