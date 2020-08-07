@@ -9,6 +9,7 @@ include(hunter_add_version)
 include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
+include(hunter_cmake_args)
 
 hunter_add_version(
     PACKAGE_NAME
@@ -19,6 +20,12 @@ hunter_add_version(
     "https://github.com/soramitsu/kagome/archive/v0.0.1.tar.gz"
     SHA1
     b3690c673b48c413b521adec9eeae95ebf283c83
+)
+
+hunter_cmake_args(
+    kagome
+    CMAKE_ARGS
+        TESTING=OFF
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
