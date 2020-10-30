@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2017, Ruslan Baratov
+# Copyright (c) 2016-2020, Rahul Sheth, Ruslan Baratov
 # Copyright (c) 2020, Soramitsu Co., Ltd.
 # All rights reserved.
 # SPDX-License-Identifier: Apache-2.0

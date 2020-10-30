@@ -53,15 +53,39 @@ hunter_add_version(
     eb8cf84437f6cd4e8efbda5839655e1e1c347c27
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    Assimp
+    VERSION
+    5.0.1-575ce61
+    URL
+    "https://github.com/assimp/assimp/archive/575ce6136d4941a45c6ba894947d0e79fe032aff.tar.gz"
+    SHA1
+    1c25da96497aede9070c2db4479c22e9dae8567f
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Assimp
+    VERSION
+    5.0.1-dbd99bf
+    URL
+    "https://github.com/assimp/assimp/archive/dbd99bf700f140090e9fc495ff1175d0e619323a.tar.gz"
+    SHA1
+    7181e77744e8b495b5caf08f72a990797207745c
+)
+
 hunter_cmake_args(
     Assimp
     CMAKE_ARGS
+    BUILD_SHARED_LIBS=OFF
     ASSIMP_BUILD_ASSIMP_TOOLS=OFF
     ASSIMP_BUILD_SAMPLES=OFF
     ASSIMP_BUILD_TESTS=OFF
     ASSIMP_ENABLE_BOOST_WORKAROUND=OFF
     ASSIMP_INSTALL_PDB=OFF
-    IGNORE_GIT_HASH=ON
+    ASSIMP_IGNORE_GIT_HASH=ON
+    ASSIMP_HUNTER_ENABLED=ON
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)

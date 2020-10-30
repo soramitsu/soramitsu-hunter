@@ -149,6 +149,17 @@ hunter_add_version(
     490beb456fb6934bd4d9f6012c601f6724c2f757
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    Protobuf
+    VERSION
+    "3.12.4-p1"
+    URL
+    "https://github.com/cpp-pm/protobuf/archive/v3.12.4-p1.tar.gz"
+    SHA1
+    01b62322e6d9d3271261882bbc7c1719f7179d9d
+)
+
 string(
     COMPARE EQUAL "${CMAKE_SYSTEM_NAME}" "WindowsStore" _hunter_windows_store
 )
