@@ -491,7 +491,7 @@ endif()
 
 hunter_default_version(spirv-cross VERSION 20190906)
 hunter_default_version(sqlite3 VERSION 3.30.1-p0)
-hunter_default_version(sr25519 VERSION 0.0.0)
+hunter_default_version(schnorrkel_crust VERSION 0.2.0)
 hunter_default_version(sse2neon VERSION 1.0.0-p0)
 hunter_default_version(stanhull VERSION 0.0.1)
 hunter_default_version(state_machine VERSION 1.1)
