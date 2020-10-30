@@ -12,15 +12,15 @@ include(hunter_pick_scheme)
 
 hunter_add_version(
     PACKAGE_NAME
-    sr25519
+    schnorrkel_crust
     VERSION
     0.0.0
-    URL https://github.com/Warchant/sr25519-crust/archive/2947abb8367d57cd712e8bc80687d224ccd86ccf.zip
-    SHA1 2b0f06efba6846fd66f8de397179b1b955af8da6
+    URL https://github.com/soramitsu/soramitsu-sr25519-crust/archive/f2ab23af56bba1ba611b7be8d9bbafd63a22dec3.zip
+    SHA1 767099ca5a3ae806a893c7f5cf6e3631da486e3d
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(sr25519)
-hunter_download(PACKAGE_NAME sr25519)
+hunter_cacheable(schnorrkel_crust)
+hunter_download(PACKAGE_NAME schnorrkel_crust)
 
 
