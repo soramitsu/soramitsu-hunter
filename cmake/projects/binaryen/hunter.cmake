@@ -32,6 +32,17 @@ hunter_add_version(
     f8ff97ee1e16862e8c88bfea2ffb88247ad65223
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    binaryen
+    VERSION
+    version_98
+    URL
+    "https://github.com/kamilsa/binaryen/archive/8dfe13494b97f0204670935b9cfa7a45a4ac61ab.zip"
+    SHA1
+    425406bb430709eec2df5056c145bbb68a9b8069
+)
+
 hunter_cmake_args(
     binaryen
     CMAKE_ARGS
