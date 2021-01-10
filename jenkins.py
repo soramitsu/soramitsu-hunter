@@ -206,6 +206,9 @@ def run():
 
   subprocess.check_call(args)
 
+  cache_retry_count = 0
+  max_cache_retry_count = 5
+
   if parsed_args.upload:
     seconds = 60
     print(
@@ -247,7 +250,13 @@ def run():
       print('  `{}`'.format(i))
     print(']')
 
-    subprocess.check_call(args)
+    while subprocess.call(args) and cache_retry_count < max_cache_retry_count:
+      print('Cache-only sanity check attempt {} failed...'.format(cache_retry_count))
+      time.sleep(seconds)
+      cache_retry_count += 1
+
+    if cache_retry_count >= max_cache_retry_count:
+      exit(1)
 
 if __name__ == "__main__":
   run()
