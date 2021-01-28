@@ -1,0 +1,35 @@
+name: CI-docs
+on:
+  push:
+    branches: ['master', 'github_actions_ci']
+    paths: ['docs/**', 'examples/**']
+  pull_request:
+    branches: ['master', 'github_actions_ci']
+    paths: ['docs/**', 'examples/**']
+
+jobs:
+
+  docs:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Git checkout with submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install virtualenv
+
+    - name: Run test script
+      run: |
+        cd docs
+        ./jenkins.sh

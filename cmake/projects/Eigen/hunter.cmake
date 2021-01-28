@@ -17,6 +17,39 @@ hunter_add_version(
     PACKAGE_NAME
     Eigen
     VERSION
+    "3.3.9"
+    URL
+    "https://gitlab.com/libeigen/eigen/-/archive/3.3.9/eigen-3.3.9.tar.gz"
+    SHA1
+    6a5a43a327b3aaeb7e74dc32bf1d7011cf6f149c
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Eigen
+    VERSION
+    "3.3.8"
+    URL
+    "https://gitlab.com/libeigen/eigen/-/archive/3.3.8/eigen-3.3.8.tar.gz"
+    SHA1
+    aba0afb30cfbc4a4b0ce03fb2ee658ff7f674301
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Eigen
+    VERSION
+    "3.3.8-b11f817"
+    URL
+    "https://gitlab.com/libeigen/eigen/-/archive/b11f817bcff04276f3024d6780f56a137968b81a/eigen-b11f817bcff04276f3024d6780f56a137968b81a.tar.gz"
+    SHA1
+    2b57944e2d36cc210d142f1b8aa8f1d1d491b655
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Eigen
+    VERSION
     "3.3.7"
     URL
     "https://github.com/eigenteam/eigen-git-mirror/archive/3.3.7.tar.gz"

@@ -52,82 +52,13 @@ Commit changes:
   [hunter]> git add cmake/configs/default.cmake
   [hunter]> git commit -m "Update 'hunter_box_1' to v1.0.1"
 
-Testing
-=======
-
-.. note::
-
-  Check :ref:`Create package: CI testing <ci testing>` page for registering
-  services and branches/remotes description.
-
-Fetch latest CI configs, you may need to run ``git pull`` if you have
-``pkg.hunter_box_1`` locally:
-
-.. code-block:: none
-
-  [hunter]> git fetch ci
-  [hunter]> git checkout pkg.hunter_box_1
-  [hunter]> git pull
-
-If the package has not been updated in some time, the CI toolchains
-may have fallen out of date.  It is preferable to keep the CI
-configuration in sync with the working defaults from ``pkg.template``
-to make sure the package will build with recent compilers and to help
-ensure cache hits for any required Hunter managed dependencies.
-
-.. code-block:: none
-
-  [hunter]> git checkout pkg.template
-  [hunter]> git pull
-  [hunter]> git checkout pkg.hunter_box_1
-  [hunter]> git merge pkg.template
-
-Create temporary branch ``test.hunter_box_1`` for testing basing on
-``pkg.hunter_box_1``:
-
-.. code-block:: none
-
-  [hunter]> git checkout -b test.hunter_box_1
-
-Merge it with ``hunter_box_1`` package updates:
-
-.. code-block:: none
-
-  [hunter]> git merge pr.hunter_box_1
-
-Push changes to your Hunter fork remote to start tests:
-
-.. code-block:: none
-
-  [hunter]> git push -u origin test.hunter_box_1
-
-.. image:: /creating-new/images/pr-update-version.png
-  :align: center
-  :alt: Branches
-
-Add toolchains
-==============
-
-If new version of package fix some build:
-
-* Add new version to ``master``
-* Tests against **old** set of toolchains
-* New version merged to master
-* Send pull request to ``pkg.hunter_box_1`` to enable **new** toolchains
-
-Remove toolchains
-=================
-
-If new version broke some toolchain:
-
-* Disable toolchains in ``pkg.hunter_box_1``
-* Add new version to ``master``
-* Tests against **new** set of toolchains without broken
+.. include:: test.rst
+  :end-before: toctree
 
 Submit the pull request to Hunter
 =================================
 
-Once the tests are passing, and all required toolchain modifications have been applied to the ``ci`` fork in ``pkg.hunter_box_1`` via pull requests (see above), the original package update in ``pr.hunter_box_1`` should then be pushed to your Hunter fork (``origin`` in above discussions):
+Once tests are passing, the package update in ``pr.hunter_box_1`` should be pushed to your Hunter fork:
 
 .. code-block:: none
 
