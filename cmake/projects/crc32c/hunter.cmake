@@ -22,7 +22,7 @@ hunter_cmake_args(crc32c CMAKE_ARGS
     CRC32C_BUILD_TESTS=OFF
     CRC32C_BUILD_BENCHMARKS=OFF
     CRC32C_USE_GLOG=OFF
-    CRC32C_INSTALL=ON)
+    )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(crc32c)
