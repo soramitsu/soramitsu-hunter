@@ -1,4 +1,3 @@
-# Copyright (c) 2016-2017, Ruslan Baratov
 # Copyright (c) 2020, Soramitsu Co., Ltd.
 # All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
@@ -9,25 +8,24 @@ include(hunter_add_version)
 include(hunter_cacheable)
 include(hunter_download)
 include(hunter_pick_scheme)
-include(hunter_cmake_args)
 
 hunter_add_version(
     PACKAGE_NAME
-    kagome
+    libsecp256k1
     VERSION
-    0.0.1
+    0.1
     URL
-    "https://github.com/soramitsu/kagome/archive/v0.0.1.tar.gz"
+    "https://github.com/soramitsu/soramitsu-libsecp256k1/archive/v0.1.tar.gz"
     SHA1
-    b3690c673b48c413b521adec9eeae95ebf283c83
+    4ffcdc2477794ad588874975184cfa68f7e15e94
 )
 
 hunter_cmake_args(
-    kagome
+    libsecp256k1
     CMAKE_ARGS
-        TESTING=OFF
+    SECP256K1_BUILD_TEST=OFF
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(kagome)
-hunter_download(PACKAGE_NAME kagome)
+hunter_cacheable(libsecp256k1)
+hunter_download(PACKAGE_NAME libsecp256k1)
