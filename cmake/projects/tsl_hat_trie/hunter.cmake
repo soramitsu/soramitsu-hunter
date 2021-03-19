@@ -1,12 +1,7 @@
-<<<<<<< HEAD
 # Copyright (c) 2016-2017, Ruslan Baratov
 # Copyright (c) 2020, Soramitsu Co., Ltd.
 # All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
-=======
-# Copyright (c) 2016-2020, Rahul Sheth, Ruslan Baratov
-# All rights reserved.
->>>>>>> 7de453c1c452e1789b39ddf9225d879822ca8a07
 
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
 
