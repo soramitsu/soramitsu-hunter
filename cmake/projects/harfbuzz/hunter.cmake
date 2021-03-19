@@ -13,6 +13,17 @@ hunter_add_version(
     PACKAGE_NAME
     harfbuzz
     VERSION
+    2.5.1-p1
+    URL
+    "https://github.com/cpp-pm/harfbuzz/archive/2.5.1-p1.tar.gz"
+    SHA1
+    a183831eb0dddfd14a4bb8c2ce7d8b63fac61865
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    harfbuzz
+    VERSION
     1.7.6-p0
     URL
     "https://github.com/hunter-packages/harfbuzz/archive/v1.7.6-p0.tar.gz"

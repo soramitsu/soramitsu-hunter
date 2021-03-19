@@ -14,5 +14,5 @@ hunter_add_package(libigl)
 find_package(libigl CONFIG REQUIRED)
 
 add_executable(boo boo.cpp)
-target_link_libraries(boo PUBLIC igl::core)
+target_link_libraries(boo PUBLIC igl::common igl::core)
 # DOCUMENTATION_END }

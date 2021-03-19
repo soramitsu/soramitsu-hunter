@@ -31,6 +31,17 @@ hunter_add_version(
     44d6157e5bf6005f1f611bcea323488e6268d9c9
 )
 
+hunter_add_version(
+    PACKAGE_NAME
+    glslang
+    VERSION
+    8.13.3743-9eef54b2-p0
+    URL 
+    "https://github.com/cpp-pm/glslang/archive/v8.13.3743-9eef54b2-p0.tar.gz"
+    SHA1 
+    fb8593f4671116d318909394d2fba3774f027ca0
+)
+
 if(IOS OR ANDROID)
 hunter_cmake_args(
     glslang

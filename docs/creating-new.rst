@@ -11,4 +11,5 @@ Creating new package
 
    /creating-new/create
    /creating-new/update
+   /creating-new/test
    /creating-new/patch
