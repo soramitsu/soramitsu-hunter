@@ -8,15 +8,9 @@ include(hunter_pick_scheme)
 
 hunter_add_version(
     PACKAGE_NAME soralog
-    VERSION "0.0.2"
-    URL "https://github.com/soramitsu/soralog/archive/v0.0.2.tar.gz"
-    SHA1 "8c215833d10e62afe080ba990cc8f6410cd23c2f")
-
-hunter_add_version(
-    PACKAGE_NAME soralog
-    VERSION "0.0.3"
-    URL "https://github.com/soramitsu/soralog/archive/v0.0.3.tar.gz"
-    SHA1 "0808fb892ece04cfa2474549022dc6ffb22ccd49")
+    VERSION "0.0.4"
+    URL "https://github.com/soramitsu/soralog/archive/v0.0.4.tar.gz"
+    SHA1 "df0cd03eddfff42d10445e4746f4927fecfd8663")
 
 hunter_cmake_args(
     soralog
