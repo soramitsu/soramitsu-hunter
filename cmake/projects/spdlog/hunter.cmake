@@ -128,7 +128,7 @@ hunter_cmake_args(
         SPDLOG_BUILD_TESTING=OFF
         SPDLOG_BUILD_TESTS=OFF
         SPDLOG_BUILD_BENCH=OFF
-        SPDLOG_FMT_EXTERNAL=NO
+        SPDLOG_FMT_EXTERNAL=ON
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
