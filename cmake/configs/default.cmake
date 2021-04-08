@@ -481,7 +481,7 @@ hunter_default_version(shaka_player_embedded VERSION 0.1.0-beta-p1)
 hunter_default_version(sleef VERSION 3.3.1-p1)
 hunter_default_version(sm VERSION 1.2.3)
 hunter_default_version(soil VERSION 1.0.4)
-hunter_default_version(soralog VERSION 0.0.4)
+hunter_default_version(soralog VERSION 0.0.5)
 hunter_default_version(sources_for_android_sdk_packer VERSION 1.0.0)
 hunter_default_version(sparsehash VERSION 2.0.2)
 
