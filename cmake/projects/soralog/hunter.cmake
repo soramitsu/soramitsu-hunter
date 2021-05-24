@@ -8,9 +8,10 @@ include(hunter_pick_scheme)
 
 hunter_add_version(
     PACKAGE_NAME soralog
-    VERSION "0.0.4"
-    URL "https://github.com/soramitsu/soralog/archive/v0.0.4.tar.gz"
-    SHA1 "df0cd03eddfff42d10445e4746f4927fecfd8663")
+    VERSION "0.0.5"
+    URL  "https://github.com/soramitsu/soralog/archive/v0.0.5.tar.gz"
+    SHA1 "8b192d0e4cced8743b8a5e943cd0a89a5ad7939d"
+)
 
 hunter_add_version(
     PACKAGE_NAME soralog
