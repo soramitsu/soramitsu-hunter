@@ -11,8 +11,8 @@ project(download-wavm)
 
 # DOCUMENTATION_START {
 hunter_add_package(wavm)
-find_package(wavm CONFIG REQUIRED)
+find_package(WAVM CONFIG REQUIRED)
 
 add_executable(boo main.cpp)
-target_link_libraries(boo PUBLIC wavm::libWAVM)
+target_link_libraries(boo PUBLIC WAVM::libWAVM)
 # DOCUMENTATION_END }
