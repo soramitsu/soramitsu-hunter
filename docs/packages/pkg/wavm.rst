@@ -13,7 +13,7 @@ wavm
 -  `Official <https://github.com/WAVM/WAVM>`__
 -  `Hunterized <https://github.com/Harrm/WAVM/tree/hunterized>`__
 -  `Example <https://github.com/soramitsu/soramitsu-hunter/blob/master/examples/wavm/main.cpp>`__
--  Added by `Vladimir Shcherba <https://github.com/Harrm>`__ (`pr-N <https://github.com/ruslo/hunter/pull/N>`__)
+-  Added by `Vladimir Shcherba <https://github.com/Harrm>`__ (`#31 <https://github.com/soramitsu/soramitsu-hunter/pull/31>`__)
 
 .. literalinclude:: /../examples/wavm/CMakeLists.txt
   :language: cmake
