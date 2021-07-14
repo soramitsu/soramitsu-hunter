@@ -2,6 +2,7 @@
 
 include(hunter_add_version)
 include(hunter_cacheable)
+include(hunter_cmake_args)
 include(hunter_download)
 include(hunter_pick_scheme)
 
@@ -37,15 +38,29 @@ hunter_add_version(
 
 hunter_add_version(
     PACKAGE_NAME gRPC
-    VERSION "1.29.1"
-    URL "https://github.com/soramitsu/libp2p-grpc/archive/hunter-1.29.1.tar.gz"
-    SHA1 "28eee0d55849fcd42e9408525558aacbd7d27c1d")
+    VERSION "1.31.0-p0"
+    URL "https://github.com/cpp-pm/grpc/archive/v1.31.0-p0.tar.gz"
+    SHA1 "017f1bbb1df948422b4e4894f1fcdaf7c120bc6e")
 
 hunter_add_version(
     PACKAGE_NAME gRPC
-    VERSION "1.29.1.1"
-    URL "https://github.com/soramitsu/libp2p-grpc/archive/b0245d9c20e10c4581d70e6565fd988058fe6ebd.tar.gz"
-    SHA1 "85c002b2c8d4d4209475a61bd321368d384188f8")
+    VERSION "1.34.0-p0"
+    URL "https://github.com/cpp-pm/grpc/archive/v1.34.0-p0.tar.gz"
+    SHA1 "437f34aaf0ae699fc95cfddef16eabb9e2e8ed04")
+
+hunter_cmake_args(
+   gRPC
+   CMAKE_ARGS
+        gRPC_ZLIB_PROVIDER=package
+        gRPC_CARES_PROVIDER=package
+        gRPC_RE2_PROVIDER=package
+        gRPC_SSL_PROVIDER=package
+        gRPC_PROTOBUF_PROVIDER=package
+        gRPC_PROTOBUF_PACKAGE_TYPE=CONFIG
+        gRPC_GFLAGS_PROVIDER=package
+        gRPC_BENCHMARK_PROVIDER=package
+        gRPC_ABSL_PROVIDER=package
+)
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(gRPC)

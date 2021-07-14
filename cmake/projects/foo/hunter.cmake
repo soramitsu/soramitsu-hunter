@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2019, Ruslan Baratov
+# Copyright (c) 2016-2020, Rahul Sheth, Ruslan Baratov
 # All rights reserved.
 
 # !!! DO NOT PLACE HEADER GUARDS HERE !!!
@@ -14,7 +14,7 @@ hunter_add_version(
     VERSION
     1.0.0
     URL
-    "https://github.com/hunter-packages/foo/archive/v1.0.0.tar.gz"
+    "https://github.com/cpp-pm/foo/archive/v1.0.0.tar.gz"
     SHA1
     1111111111111111111111111111111111111111
 )
